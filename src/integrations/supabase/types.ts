@@ -5723,6 +5723,16 @@ export type Database = {
         }
         Returns: string
       }
+      create_visit_invoice: {
+        Args: {
+          p_lines: Json
+          p_note?: string
+          p_org_id: string
+          p_patient_id: string
+          p_plan_item_ids?: string[]
+        }
+        Returns: string
+      }
       get_org_role: {
         Args: { _org_id: string; _user_id: string }
         Returns: Database["public"]["Enums"]["org_role"]
