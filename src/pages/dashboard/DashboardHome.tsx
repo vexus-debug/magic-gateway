@@ -36,6 +36,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { PageTourButton } from "@/components/dashboard/tour/PageTourButton";
 import { EyeTodayScreen } from "@/components/dashboard/eye/EyeTodayScreen";
+import { DentistWaitingRoomCard } from "@/components/dashboard/DentistWaitingRoomCard";
 import {
   useCurrentUserName,
   useDashboardStats,
@@ -302,6 +303,8 @@ function StandardDashboardHome() {
           patientCount={s.totalPatients}
         />
       )}
+
+      {mode === "dentist" && <DentistWaitingRoomCard staffId={pulse?.assignedStaffId || null} />}
 
       <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="rounded-lg bg-gradient-to-br from-primary/60 via-primary/20 to-border p-px shadow-[0_18px_48px_-28px_hsl(var(--primary)/0.65)]">
         <div className="grid gap-5 rounded-[7px] bg-card p-5 md:grid-cols-[1fr_auto] md:items-center md:p-7">
