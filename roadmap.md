@@ -28,3 +28,11 @@
 - [x] Prescriptions: presets + diagnosis prefill
 - [x] Lab case from visit with prefill
 - [x] Visit stepper "Next step"
+
+## Dentist workflow blueprint (zero double-entry)
+- [x] Fix 1: "Ready in waiting room" cockpit with Call & Start + chair badge
+- [ ] Fix 2: Auto-propose procedure from chart condition (partly exists: chart → plan with catalog price)
+- [ ] Fix 3: In-visit SOAP notes sheet with canned phrases, saved on finish
+- [ ] Fix 4: Draft invoice on finish + cashier "Ready for payment" queue
+- [ ] Fix 5: Lab fee to draft invoice; material suggestions per procedure
+- [x] Fix 6: Dentist sidebar already clinical-only (shop, expenses, POs, suppliers, website, audit hidden)
